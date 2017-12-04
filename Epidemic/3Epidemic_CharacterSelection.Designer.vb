@@ -36,7 +36,6 @@ Partial Class Epidemic_CharacterSelection3
         Me.lblGender = New System.Windows.Forms.Label()
         Me.radProM = New System.Windows.Forms.RadioButton()
         Me.radProF = New System.Windows.Forms.RadioButton()
-        Me.radProO = New System.Windows.Forms.RadioButton()
         Me.radK1O = New System.Windows.Forms.RadioButton()
         Me.radK1F = New System.Windows.Forms.RadioButton()
         Me.radK1M = New System.Windows.Forms.RadioButton()
@@ -46,8 +45,14 @@ Partial Class Epidemic_CharacterSelection3
         Me.radK3O = New System.Windows.Forms.RadioButton()
         Me.radK3F = New System.Windows.Forms.RadioButton()
         Me.radK3M = New System.Windows.Forms.RadioButton()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox1.SuspendLayout()
+        Me.grpPro = New System.Windows.Forms.GroupBox()
+        Me.grpK1 = New System.Windows.Forms.GroupBox()
+        Me.grpK2 = New System.Windows.Forms.GroupBox()
+        Me.grpK3 = New System.Windows.Forms.GroupBox()
+        Me.grpPro.SuspendLayout()
+        Me.grpK1.SuspendLayout()
+        Me.grpK2.SuspendLayout()
+        Me.grpK3.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnConfirm
@@ -61,7 +66,7 @@ Partial Class Epidemic_CharacterSelection3
         '
         'txtFamilyMember1
         '
-        Me.txtFamilyMember1.Location = New System.Drawing.Point(195, 63)
+        Me.txtFamilyMember1.Location = New System.Drawing.Point(195, 60)
         Me.txtFamilyMember1.Name = "txtFamilyMember1"
         Me.txtFamilyMember1.Size = New System.Drawing.Size(100, 22)
         Me.txtFamilyMember1.TabIndex = 1
@@ -75,7 +80,7 @@ Partial Class Epidemic_CharacterSelection3
         '
         'txtFamilyMember3
         '
-        Me.txtFamilyMember3.Location = New System.Drawing.Point(195, 159)
+        Me.txtFamilyMember3.Location = New System.Drawing.Point(195, 160)
         Me.txtFamilyMember3.Name = "txtFamilyMember3"
         Me.txtFamilyMember3.Size = New System.Drawing.Size(100, 22)
         Me.txtFamilyMember3.TabIndex = 3
@@ -89,7 +94,7 @@ Partial Class Epidemic_CharacterSelection3
         '
         'txtFamilyMember5
         '
-        Me.txtFamilyMember5.Location = New System.Drawing.Point(195, 258)
+        Me.txtFamilyMember5.Location = New System.Drawing.Point(195, 260)
         Me.txtFamilyMember5.Name = "txtFamilyMember5"
         Me.txtFamilyMember5.Size = New System.Drawing.Size(100, 22)
         Me.txtFamilyMember5.TabIndex = 5
@@ -97,7 +102,7 @@ Partial Class Epidemic_CharacterSelection3
         'lblProtagonist
         '
         Me.lblProtagonist.AutoSize = True
-        Me.lblProtagonist.Location = New System.Drawing.Point(12, 66)
+        Me.lblProtagonist.Location = New System.Drawing.Point(12, 63)
         Me.lblProtagonist.Name = "lblProtagonist"
         Me.lblProtagonist.Size = New System.Drawing.Size(125, 17)
         Me.lblProtagonist.TabIndex = 6
@@ -115,7 +120,7 @@ Partial Class Epidemic_CharacterSelection3
         'lblProKid1
         '
         Me.lblProKid1.AutoSize = True
-        Me.lblProKid1.Location = New System.Drawing.Point(12, 162)
+        Me.lblProKid1.Location = New System.Drawing.Point(12, 163)
         Me.lblProKid1.Name = "lblProKid1"
         Me.lblProKid1.Size = New System.Drawing.Size(160, 17)
         Me.lblProKid1.TabIndex = 8
@@ -134,7 +139,7 @@ Partial Class Epidemic_CharacterSelection3
         'lblProKid3
         '
         Me.lblProKid3.AutoSize = True
-        Me.lblProKid3.Location = New System.Drawing.Point(12, 261)
+        Me.lblProKid3.Location = New System.Drawing.Point(12, 263)
         Me.lblProKid3.Name = "lblProKid3"
         Me.lblProKid3.Size = New System.Drawing.Size(166, 17)
         Me.lblProKid3.TabIndex = 10
@@ -143,7 +148,7 @@ Partial Class Epidemic_CharacterSelection3
         'lblGender
         '
         Me.lblGender.AutoSize = True
-        Me.lblGender.Location = New System.Drawing.Point(327, 16)
+        Me.lblGender.Location = New System.Drawing.Point(327, 22)
         Me.lblGender.Name = "lblGender"
         Me.lblGender.Size = New System.Drawing.Size(60, 17)
         Me.lblGender.TabIndex = 11
@@ -152,7 +157,7 @@ Partial Class Epidemic_CharacterSelection3
         'radProM
         '
         Me.radProM.AutoSize = True
-        Me.radProM.Location = New System.Drawing.Point(24, 21)
+        Me.radProM.Location = New System.Drawing.Point(23, 17)
         Me.radProM.Name = "radProM"
         Me.radProM.Size = New System.Drawing.Size(59, 21)
         Me.radProM.TabIndex = 12
@@ -163,7 +168,7 @@ Partial Class Epidemic_CharacterSelection3
         'radProF
         '
         Me.radProF.AutoSize = True
-        Me.radProF.Location = New System.Drawing.Point(89, 21)
+        Me.radProF.Location = New System.Drawing.Point(88, 17)
         Me.radProF.Name = "radProF"
         Me.radProF.Size = New System.Drawing.Size(75, 21)
         Me.radProF.TabIndex = 13
@@ -171,21 +176,10 @@ Partial Class Epidemic_CharacterSelection3
         Me.radProF.Text = "Female"
         Me.radProF.UseVisualStyleBackColor = True
         '
-        'radProO
-        '
-        Me.radProO.AutoSize = True
-        Me.radProO.Location = New System.Drawing.Point(170, 21)
-        Me.radProO.Name = "radProO"
-        Me.radProO.Size = New System.Drawing.Size(65, 21)
-        Me.radProO.TabIndex = 14
-        Me.radProO.TabStop = True
-        Me.radProO.Text = "Other"
-        Me.radProO.UseVisualStyleBackColor = True
-        '
         'radK1O
         '
         Me.radK1O.AutoSize = True
-        Me.radK1O.Location = New System.Drawing.Point(570, 158)
+        Me.radK1O.Location = New System.Drawing.Point(170, 18)
         Me.radK1O.Name = "radK1O"
         Me.radK1O.Size = New System.Drawing.Size(65, 21)
         Me.radK1O.TabIndex = 17
@@ -196,7 +190,7 @@ Partial Class Epidemic_CharacterSelection3
         'radK1F
         '
         Me.radK1F.AutoSize = True
-        Me.radK1F.Location = New System.Drawing.Point(449, 158)
+        Me.radK1F.Location = New System.Drawing.Point(89, 18)
         Me.radK1F.Name = "radK1F"
         Me.radK1F.Size = New System.Drawing.Size(75, 21)
         Me.radK1F.TabIndex = 16
@@ -207,7 +201,7 @@ Partial Class Epidemic_CharacterSelection3
         'radK1M
         '
         Me.radK1M.AutoSize = True
-        Me.radK1M.Location = New System.Drawing.Point(330, 158)
+        Me.radK1M.Location = New System.Drawing.Point(24, 18)
         Me.radK1M.Name = "radK1M"
         Me.radK1M.Size = New System.Drawing.Size(59, 21)
         Me.radK1M.TabIndex = 15
@@ -218,7 +212,7 @@ Partial Class Epidemic_CharacterSelection3
         'radK2O
         '
         Me.radK2O.AutoSize = True
-        Me.radK2O.Location = New System.Drawing.Point(570, 210)
+        Me.radK2O.Location = New System.Drawing.Point(170, 16)
         Me.radK2O.Name = "radK2O"
         Me.radK2O.Size = New System.Drawing.Size(65, 21)
         Me.radK2O.TabIndex = 20
@@ -229,7 +223,7 @@ Partial Class Epidemic_CharacterSelection3
         'radK2F
         '
         Me.radK2F.AutoSize = True
-        Me.radK2F.Location = New System.Drawing.Point(449, 210)
+        Me.radK2F.Location = New System.Drawing.Point(89, 16)
         Me.radK2F.Name = "radK2F"
         Me.radK2F.Size = New System.Drawing.Size(75, 21)
         Me.radK2F.TabIndex = 19
@@ -240,7 +234,7 @@ Partial Class Epidemic_CharacterSelection3
         'radK2M
         '
         Me.radK2M.AutoSize = True
-        Me.radK2M.Location = New System.Drawing.Point(328, 211)
+        Me.radK2M.Location = New System.Drawing.Point(24, 16)
         Me.radK2M.Name = "radK2M"
         Me.radK2M.Size = New System.Drawing.Size(59, 21)
         Me.radK2M.TabIndex = 18
@@ -251,7 +245,7 @@ Partial Class Epidemic_CharacterSelection3
         'radK3O
         '
         Me.radK3O.AutoSize = True
-        Me.radK3O.Location = New System.Drawing.Point(570, 259)
+        Me.radK3O.Location = New System.Drawing.Point(169, 17)
         Me.radK3O.Name = "radK3O"
         Me.radK3O.Size = New System.Drawing.Size(65, 21)
         Me.radK3O.TabIndex = 23
@@ -262,7 +256,7 @@ Partial Class Epidemic_CharacterSelection3
         'radK3F
         '
         Me.radK3F.AutoSize = True
-        Me.radK3F.Location = New System.Drawing.Point(449, 259)
+        Me.radK3F.Location = New System.Drawing.Point(88, 17)
         Me.radK3F.Name = "radK3F"
         Me.radK3F.Size = New System.Drawing.Size(75, 21)
         Me.radK3F.TabIndex = 22
@@ -273,7 +267,7 @@ Partial Class Epidemic_CharacterSelection3
         'radK3M
         '
         Me.radK3M.AutoSize = True
-        Me.radK3M.Location = New System.Drawing.Point(328, 259)
+        Me.radK3M.Location = New System.Drawing.Point(23, 17)
         Me.radK3M.Name = "radK3M"
         Me.radK3M.Size = New System.Drawing.Size(59, 21)
         Me.radK3M.TabIndex = 21
@@ -281,33 +275,62 @@ Partial Class Epidemic_CharacterSelection3
         Me.radK3M.Text = "Male"
         Me.radK3M.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'grpPro
         '
-        Me.GroupBox1.Controls.Add(Me.radProM)
-        Me.GroupBox1.Controls.Add(Me.radProF)
-        Me.GroupBox1.Controls.Add(Me.radProO)
-        Me.GroupBox1.Location = New System.Drawing.Point(330, 48)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(354, 53)
-        Me.GroupBox1.TabIndex = 24
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.grpPro.Controls.Add(Me.radProM)
+        Me.grpPro.Controls.Add(Me.radProF)
+        Me.grpPro.Location = New System.Drawing.Point(330, 42)
+        Me.grpPro.Name = "grpPro"
+        Me.grpPro.Size = New System.Drawing.Size(355, 40)
+        Me.grpPro.TabIndex = 24
+        Me.grpPro.TabStop = False
+        Me.grpPro.Text = "Protagonist"
+        '
+        'grpK1
+        '
+        Me.grpK1.Controls.Add(Me.radK1M)
+        Me.grpK1.Controls.Add(Me.radK1F)
+        Me.grpK1.Controls.Add(Me.radK1O)
+        Me.grpK1.Location = New System.Drawing.Point(330, 142)
+        Me.grpK1.Name = "grpK1"
+        Me.grpK1.Size = New System.Drawing.Size(355, 40)
+        Me.grpK1.TabIndex = 25
+        Me.grpK1.TabStop = False
+        Me.grpK1.Text = "First Child"
+        '
+        'grpK2
+        '
+        Me.grpK2.Controls.Add(Me.radK2M)
+        Me.grpK2.Controls.Add(Me.radK2F)
+        Me.grpK2.Controls.Add(Me.radK2O)
+        Me.grpK2.Location = New System.Drawing.Point(330, 190)
+        Me.grpK2.Name = "grpK2"
+        Me.grpK2.Size = New System.Drawing.Size(355, 40)
+        Me.grpK2.TabIndex = 26
+        Me.grpK2.TabStop = False
+        Me.grpK2.Text = "Second Child"
+        '
+        'grpK3
+        '
+        Me.grpK3.Controls.Add(Me.radK3M)
+        Me.grpK3.Controls.Add(Me.radK3F)
+        Me.grpK3.Controls.Add(Me.radK3O)
+        Me.grpK3.Location = New System.Drawing.Point(330, 242)
+        Me.grpK3.Name = "grpK3"
+        Me.grpK3.Size = New System.Drawing.Size(355, 40)
+        Me.grpK3.TabIndex = 27
+        Me.grpK3.TabStop = False
+        Me.grpK3.Text = "Third Child"
         '
         'Epidemic_CharacterSelection3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(732, 423)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.radK3O)
-        Me.Controls.Add(Me.radK3F)
-        Me.Controls.Add(Me.radK3M)
-        Me.Controls.Add(Me.radK2O)
-        Me.Controls.Add(Me.radK2F)
-        Me.Controls.Add(Me.radK2M)
-        Me.Controls.Add(Me.radK1O)
-        Me.Controls.Add(Me.radK1F)
-        Me.Controls.Add(Me.radK1M)
+        Me.Controls.Add(Me.grpK3)
+        Me.Controls.Add(Me.grpK2)
+        Me.Controls.Add(Me.grpK1)
+        Me.Controls.Add(Me.grpPro)
         Me.Controls.Add(Me.lblGender)
         Me.Controls.Add(Me.lblProKid3)
         Me.Controls.Add(Me.lblProKid2)
@@ -322,8 +345,14 @@ Partial Class Epidemic_CharacterSelection3
         Me.Controls.Add(Me.btnConfirm)
         Me.Name = "Epidemic_CharacterSelection3"
         Me.Text = "Epidemic - Character Selection"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.grpPro.ResumeLayout(False)
+        Me.grpPro.PerformLayout()
+        Me.grpK1.ResumeLayout(False)
+        Me.grpK1.PerformLayout()
+        Me.grpK2.ResumeLayout(False)
+        Me.grpK2.PerformLayout()
+        Me.grpK3.ResumeLayout(False)
+        Me.grpK3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -342,7 +371,6 @@ Partial Class Epidemic_CharacterSelection3
     Friend WithEvents lblGender As System.Windows.Forms.Label
     Friend WithEvents radProM As System.Windows.Forms.RadioButton
     Friend WithEvents radProF As System.Windows.Forms.RadioButton
-    Friend WithEvents radProO As System.Windows.Forms.RadioButton
     Friend WithEvents radK1O As System.Windows.Forms.RadioButton
     Friend WithEvents radK1F As System.Windows.Forms.RadioButton
     Friend WithEvents radK1M As System.Windows.Forms.RadioButton
@@ -352,5 +380,8 @@ Partial Class Epidemic_CharacterSelection3
     Friend WithEvents radK3O As System.Windows.Forms.RadioButton
     Friend WithEvents radK3F As System.Windows.Forms.RadioButton
     Friend WithEvents radK3M As System.Windows.Forms.RadioButton
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents grpPro As System.Windows.Forms.GroupBox
+    Friend WithEvents grpK1 As System.Windows.Forms.GroupBox
+    Friend WithEvents grpK2 As System.Windows.Forms.GroupBox
+    Friend WithEvents grpK3 As System.Windows.Forms.GroupBox
 End Class

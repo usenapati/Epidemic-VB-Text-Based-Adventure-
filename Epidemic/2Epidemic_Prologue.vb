@@ -1,3 +1,11 @@
 ﻿Public Class Epidemic_Prologue2
 
+    Private Sub Epidemic_Prologue2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        lblPrologueText.Text = "I used to live a happy and free life, only worrying about small problems that really didn’t even matter looking back." & vbCrLf & "Today marks the second year that I’ve been stuck in this hellhole of a quarantine zone." & vbCrLf & "Everyone remembers where they were when it happened. Me? I at home watching Saturday morning cartoons" & vbCrLf & "with my kids. My wife was out getting groceries to make breakfast. We were gonna have pancakes. The TV" & vbCrLf & "started flashing with the emergency alert signal, telling everyone to stay in their homes and lock the doors, but with" & vbCrLf & "no reason why. We found out the hard way. After about five minutes of trying to calm down my terrified kids," & vbCrLf & "I heard a torrent of footsteps outside of my house. If I hadn’t locked all the doors and windows, there’s no way we" & vbCrLf & "would have made it. The Furry infection had spread like a rat infestation; before that day I had never heard of a" & vbCrLf & "furry, and now there must have been 50 poor rabid people in animal suits outside of my house. I knew my wife" & vbCrLf & "didn’t make it, there were too many of them out there. We were almost out of food, but after about a week, the" & vbCrLf & "government managed to evacuate most of the civilians into quarantine zones. They bombed most of the town" & vbCrLf & "pretty hard trying to take out the furries. It didn’t work very well, and it doesn’t look like there’s a lot of hope of" & vbCrLf & "ever returning to normal life. Me and my kids are having a memorial for their mom today." & vbCrLf & vbCrLf & "Not a day goes by where I don’t miss her. And I hate the furries so much for taking her from us."
+    End Sub
+
+    Private Sub btnContinue_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinue.Click
+        Me.Hide()
+        Epidemic_CharacterSelection3.Show()
+    End Sub
 End Class

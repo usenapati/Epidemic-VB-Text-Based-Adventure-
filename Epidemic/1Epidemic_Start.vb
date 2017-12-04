@@ -15,7 +15,6 @@
 
     Private Sub btnStart_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStart.Click
         Me.Hide()
-        Epidemic_CharacterSelection3.Show()
-        'Change to Prologue
+        Epidemic_Prologue2.Show()
     End Sub
 End Class

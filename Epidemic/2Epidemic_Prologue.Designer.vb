@@ -23,7 +23,7 @@ Partial Class Epidemic_Prologue2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblPrologueText = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnContinue = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblPrologueText
@@ -31,25 +31,25 @@ Partial Class Epidemic_Prologue2
         Me.lblPrologueText.AutoSize = True
         Me.lblPrologueText.Location = New System.Drawing.Point(13, 13)
         Me.lblPrologueText.Name = "lblPrologueText"
-        Me.lblPrologueText.Size = New System.Drawing.Size(51, 17)
+        Me.lblPrologueText.Size = New System.Drawing.Size(72, 17)
         Me.lblPrologueText.TabIndex = 0
-        Me.lblPrologueText.Text = "Label1"
+        Me.lblPrologueText.Text = "Exposition"
         '
-        'Button1
+        'btnContinue
         '
-        Me.Button1.Location = New System.Drawing.Point(510, 641)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(210, 50)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Continue"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnContinue.Location = New System.Drawing.Point(510, 641)
+        Me.btnContinue.Name = "btnContinue"
+        Me.btnContinue.Size = New System.Drawing.Size(210, 50)
+        Me.btnContinue.TabIndex = 1
+        Me.btnContinue.Text = "Continue"
+        Me.btnContinue.UseVisualStyleBackColor = True
         '
         'Epidemic_Prologue2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(732, 703)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnContinue)
         Me.Controls.Add(Me.lblPrologueText)
         Me.Name = "Epidemic_Prologue2"
         Me.Text = "Epidemic - Prologue"
@@ -58,5 +58,5 @@ Partial Class Epidemic_Prologue2
 
     End Sub
     Friend WithEvents lblPrologueText As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnContinue As System.Windows.Forms.Button
 End Class
