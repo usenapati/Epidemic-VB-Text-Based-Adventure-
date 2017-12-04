@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60B8A04D-A736-4759-A3F7-F16DAA39BD65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Epidemic.My.MyApplication</StartupObject>
+    <RootNamespace>Epidemic</RootNamespace>
+    <AssemblyName>Epidemic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Epidemic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Epidemic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="10Epidemic_BasementEntrance.Designer.vb">
+      <DependentUpon>10Epidemic_BasementEntrance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="10Epidemic_BasementEntrance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="11Epidemic_OfficeBasementFZ2.Designer.vb">
+      <DependentUpon>11Epidemic_OfficeBasementFZ2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="11Epidemic_OfficeBasementFZ2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="12Epidemic_FurryBoss2_DrillDog.Designer.vb">
+      <DependentUpon>12Epidemic_FurryBoss2_DrillDog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="12Epidemic_FurryBoss2_DrillDog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="13Epidemic_OfficeStairwell.Designer.vb">
+      <DependentUpon>13Epidemic_OfficeStairwell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="13Epidemic_OfficeStairwell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="14Epidemic_OfficeFFZ.Designer.vb">
+      <DependentUpon>14Epidemic_OfficeFFZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="14Epidemic_OfficeFFZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="15Epidemic_FinalFurryBoss_“MamaFurry”.Designer.vb">
+      <DependentUpon>15Epidemic_FinalFurryBoss_“MamaFurry”.vb</DependentUpon>
+    </Compile>
+    <Compile Include="15Epidemic_FinalFurryBoss_“MamaFurry”.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="16Epidemic_Finale.Designer.vb">
+      <DependentUpon>16Epidemic_Finale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="16Epidemic_Finale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="17Epidemic_Supplies.Designer.vb">
+      <DependentUpon>17Epidemic_Supplies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="17Epidemic_Supplies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Epidemic_Start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Epidemic_Start.Designer.vb">
+      <DependentUpon>1Epidemic_Start.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2Epidemic_Prologue.Designer.vb">
+      <DependentUpon>2Epidemic_Prologue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2Epidemic_Prologue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3Epidemic_CharacterSelection.Designer.vb">
+      <DependentUpon>3Epidemic_CharacterSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3Epidemic_CharacterSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4Epidemic_PresentDay.Designer.vb">
+      <DependentUpon>4Epidemic_PresentDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4Epidemic_PresentDay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5Epidemic_EntrancetoFZ.Designer.vb">
+      <DependentUpon>5Epidemic_EntrancetoFZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5Epidemic_EntrancetoFZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6Epidemic_InsideSchoolFZ1.Designer.vb">
+      <DependentUpon>6Epidemic_InsideSchoolFZ1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="6Epidemic_InsideSchoolFZ1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7Epidemic_FurryBoss1_FurryMutant.Designer.vb">
+      <DependentUpon>7Epidemic_FurryBoss1_FurryMutant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="7Epidemic_FurryBoss1_FurryMutant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8Epidemic_OutsideSchool.Designer.vb">
+      <DependentUpon>8Epidemic_OutsideSchool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="8Epidemic_OutsideSchool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="9Epidemic_Plaza.Designer.vb">
+      <DependentUpon>9Epidemic_Plaza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="9Epidemic_Plaza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Character.vb" />
+    <Compile Include="Globals.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Party.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="10Epidemic_BasementEntrance.resx">
+      <DependentUpon>10Epidemic_BasementEntrance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="11Epidemic_OfficeBasementFZ2.resx">
+      <DependentUpon>11Epidemic_OfficeBasementFZ2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="12Epidemic_FurryBoss2_DrillDog.resx">
+      <DependentUpon>12Epidemic_FurryBoss2_DrillDog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="13Epidemic_OfficeStairwell.resx">
+      <DependentUpon>13Epidemic_OfficeStairwell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="14Epidemic_OfficeFFZ.resx">
+      <DependentUpon>14Epidemic_OfficeFFZ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="15Epidemic_FinalFurryBoss_“MamaFurry”.resx">
+      <DependentUpon>15Epidemic_FinalFurryBoss_“MamaFurry”.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="16Epidemic_Finale.resx">
+      <DependentUpon>16Epidemic_Finale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="17Epidemic_Supplies.resx">
+      <DependentUpon>17Epidemic_Supplies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Epidemic_Start.resx">
+      <DependentUpon>1Epidemic_Start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2Epidemic_Prologue.resx">
+      <DependentUpon>2Epidemic_Prologue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3Epidemic_CharacterSelection.resx">
+      <DependentUpon>3Epidemic_CharacterSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4Epidemic_PresentDay.resx">
+      <DependentUpon>4Epidemic_PresentDay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Epidemic_EntrancetoFZ.resx">
+      <DependentUpon>5Epidemic_EntrancetoFZ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6Epidemic_InsideSchoolFZ1.resx">
+      <DependentUpon>6Epidemic_InsideSchoolFZ1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7Epidemic_FurryBoss1_FurryMutant.resx">
+      <DependentUpon>7Epidemic_FurryBoss1_FurryMutant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8Epidemic_OutsideSchool.resx">
+      <DependentUpon>8Epidemic_OutsideSchool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="9Epidemic_Plaza.resx">
+      <DependentUpon>9Epidemic_Plaza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

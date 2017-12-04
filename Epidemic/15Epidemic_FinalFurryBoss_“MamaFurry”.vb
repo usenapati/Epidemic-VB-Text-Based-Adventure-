@@ -1,0 +1,3 @@
+﻿Public Class _15Epidemic_FinalFurryBoss__MamaFurry_
+
+End Class
