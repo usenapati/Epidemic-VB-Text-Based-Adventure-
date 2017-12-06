@@ -120,6 +120,12 @@
     <Compile Include="17Epidemic_Supplies.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="18GameOver1.Designer.vb">
+      <DependentUpon>18GameOver1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="18GameOver1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="1Epidemic_Start.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     <EmbeddedResource Include="17Epidemic_Supplies.resx">
       <DependentUpon>17Epidemic_Supplies.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="18GameOver1.resx">
+      <DependentUpon>18GameOver1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="1Epidemic_Start.resx">
       <DependentUpon>1Epidemic_Start.vb</DependentUpon>
     </EmbeddedResource>
@@ -263,6 +272,108 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 1 %28Dark%29 Ep. Intro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 2 Ep. Intro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 3 %28Semi-Light%29 Ep. Intro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 4 %28Bright%29 Ep. Intro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 5 %28Final Lightning%29 Ep. Intro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\START Epidemic %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\START Epidemic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backpack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main %28F%29 Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main %28F%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main %28M%29 Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main %28M%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main Furry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Young Girl %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Young Kid %28Boy%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Young Kid %28Girl%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main Animated-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main Animated-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Classroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 1 %28Animated%29-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 1 %28Animated%29-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 2-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 2-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 2-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 2-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 2-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 2-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 3-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Furry 3-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main %28Female%29-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main %28Female%29-2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

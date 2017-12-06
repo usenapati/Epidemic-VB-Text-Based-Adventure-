@@ -27,6 +27,10 @@ Partial Class Epidemic_PresentDay4
         Me.btnGO1 = New System.Windows.Forms.Button()
         Me.btnQZ = New System.Windows.Forms.Button()
         Me.btnStatus = New System.Windows.Forms.Button()
+        Me.PbxBackpack = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        CType(Me.PbxBackpack, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnFZ
@@ -41,7 +45,7 @@ Partial Class Epidemic_PresentDay4
         'lblPresent
         '
         Me.lblPresent.AutoSize = True
-        Me.lblPresent.Location = New System.Drawing.Point(13, 13)
+        Me.lblPresent.Location = New System.Drawing.Point(12, 18)
         Me.lblPresent.Name = "lblPresent"
         Me.lblPresent.Size = New System.Drawing.Size(72, 17)
         Me.lblPresent.TabIndex = 1
@@ -58,11 +62,11 @@ Partial Class Epidemic_PresentDay4
         '
         'btnQZ
         '
-        Me.btnQZ.Location = New System.Drawing.Point(261, 641)
+        Me.btnQZ.Location = New System.Drawing.Point(259, 641)
         Me.btnQZ.Name = "btnQZ"
         Me.btnQZ.Size = New System.Drawing.Size(210, 50)
         Me.btnQZ.TabIndex = 3
-        Me.btnQZ.Text = "Qurantine Zone"
+        Me.btnQZ.Text = "Look around Qurantine Zone"
         Me.btnQZ.UseVisualStyleBackColor = True
         '
         'btnStatus
@@ -74,18 +78,42 @@ Partial Class Epidemic_PresentDay4
         Me.btnStatus.Text = "Status"
         Me.btnStatus.UseVisualStyleBackColor = True
         '
+        'PbxBackpack
+        '
+        Me.PbxBackpack.Image = Global.Epidemic.My.Resources.Resources.Backpack
+        Me.PbxBackpack.Location = New System.Drawing.Point(33, 432)
+        Me.PbxBackpack.Name = "PbxBackpack"
+        Me.PbxBackpack.Size = New System.Drawing.Size(90, 112)
+        Me.PbxBackpack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PbxBackpack.TabIndex = 5
+        Me.PbxBackpack.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Epidemic.My.Resources.Resources.QZ
+        Me.PictureBox2.Location = New System.Drawing.Point(-5, -1)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(741, 708)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 6
+        Me.PictureBox2.TabStop = False
+        '
         'Epidemic_PresentDay4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(732, 703)
+        Me.Controls.Add(Me.PbxBackpack)
         Me.Controls.Add(Me.btnStatus)
         Me.Controls.Add(Me.btnQZ)
         Me.Controls.Add(Me.btnGO1)
         Me.Controls.Add(Me.lblPresent)
         Me.Controls.Add(Me.btnFZ)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Name = "Epidemic_PresentDay4"
         Me.Text = "Epidemic - Present Day"
+        CType(Me.PbxBackpack, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -95,4 +123,6 @@ Partial Class Epidemic_PresentDay4
     Friend WithEvents btnGO1 As System.Windows.Forms.Button
     Friend WithEvents btnQZ As System.Windows.Forms.Button
     Friend WithEvents btnStatus As System.Windows.Forms.Button
+    Friend WithEvents PbxBackpack As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

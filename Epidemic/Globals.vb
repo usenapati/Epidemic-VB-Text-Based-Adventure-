@@ -3,5 +3,5 @@
 
     Public Family As New Party
 
-
+    Public GameOverCode As New Integer
 End Module

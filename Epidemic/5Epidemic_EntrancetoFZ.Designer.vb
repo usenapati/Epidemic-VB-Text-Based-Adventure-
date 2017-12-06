@@ -22,16 +22,53 @@ Partial Class _5Epidemic_EntrancetoFZ
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnStatus = New System.Windows.Forms.Button()
+        Me.btnContinue = New System.Windows.Forms.Button()
+        Me.lblExpo = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        '
+        'btnStatus
+        '
+        Me.btnStatus.Location = New System.Drawing.Point(645, 12)
+        Me.btnStatus.Name = "btnStatus"
+        Me.btnStatus.Size = New System.Drawing.Size(75, 23)
+        Me.btnStatus.TabIndex = 0
+        Me.btnStatus.Text = "Status"
+        Me.btnStatus.UseVisualStyleBackColor = True
+        '
+        'btnContinue
+        '
+        Me.btnContinue.Location = New System.Drawing.Point(583, 639)
+        Me.btnContinue.Name = "btnContinue"
+        Me.btnContinue.Size = New System.Drawing.Size(137, 52)
+        Me.btnContinue.TabIndex = 1
+        Me.btnContinue.Text = "Cross the Gate"
+        Me.btnContinue.UseVisualStyleBackColor = True
+        '
+        'lblExpo
+        '
+        Me.lblExpo.AutoSize = True
+        Me.lblExpo.Location = New System.Drawing.Point(12, 9)
+        Me.lblExpo.Name = "lblExpo"
+        Me.lblExpo.Size = New System.Drawing.Size(72, 17)
+        Me.lblExpo.TabIndex = 2
+        Me.lblExpo.Text = "Exposition"
         '
         '_5Epidemic_EntrancetoFZ
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(732, 703)
+        Me.Controls.Add(Me.lblExpo)
+        Me.Controls.Add(Me.btnContinue)
+        Me.Controls.Add(Me.btnStatus)
         Me.Name = "_5Epidemic_EntrancetoFZ"
         Me.Text = "Epidemic - Entrance to Furry Zone"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+    Friend WithEvents btnStatus As System.Windows.Forms.Button
+    Friend WithEvents btnContinue As System.Windows.Forms.Button
+    Friend WithEvents lblExpo As System.Windows.Forms.Label
 End Class
