@@ -1,7 +1,8 @@
 ﻿Public Class _5Epidemic_EntrancetoFZ
 
     Private Sub btnContinue_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnContinue.Click
-        MessageBox.Show("To be continued...")
+        Me.Hide()
+        _6Epidemic_InsideSchoolFZ1.Show()
     End Sub
 
     Private Sub btnStatus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStatus.Click

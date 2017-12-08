@@ -48,7 +48,7 @@ Partial Class _5Epidemic_EntrancetoFZ
         'lblExpo
         '
         Me.lblExpo.AutoSize = True
-        Me.lblExpo.Location = New System.Drawing.Point(12, 9)
+        Me.lblExpo.Location = New System.Drawing.Point(12, 40)
         Me.lblExpo.Name = "lblExpo"
         Me.lblExpo.Size = New System.Drawing.Size(72, 17)
         Me.lblExpo.TabIndex = 2
@@ -59,9 +59,9 @@ Partial Class _5Epidemic_EntrancetoFZ
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(732, 703)
+        Me.Controls.Add(Me.btnStatus)
         Me.Controls.Add(Me.lblExpo)
         Me.Controls.Add(Me.btnContinue)
-        Me.Controls.Add(Me.btnStatus)
         Me.Name = "_5Epidemic_EntrancetoFZ"
         Me.Text = "Epidemic - Entrance to Furry Zone"
         Me.ResumeLayout(False)
